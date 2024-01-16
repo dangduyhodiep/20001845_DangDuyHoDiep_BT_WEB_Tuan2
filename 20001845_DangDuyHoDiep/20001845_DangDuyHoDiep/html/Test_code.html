@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0px auto;
+            padding: 0px;
+        }
+        
+        .wapper {
+            height: 888px;
+            width: 1089px;
+            background-color: antiquewhite;
+            border: 1px solid royalblue;
+        }
+        
+        .header {
+            height: 150px;
+            width: 1089px;
+            background-color: rgb(230, 219, 205);
+            border-bottom: 1px solid royalblue;
+            position: relative;
+        }
+        
+        .header.p1 {
+            position: absolute;
+            top: 30px;
+            left: 20p;
+            color: seashell;
+            font-size: 35px;
+        }
+        
+        .header.p2 {
+            position: absolute;
+            top: 30px;
+            left: 20p;
+            color: seashell;
+            font-size: 30px;
+            text-shadow: rgb(181, 212, 212) 10px 10px 5px;
+        }
+        
+        .header:hover>.p1 {
+            font-style: italic;
+            font-weight: bolder;
+        }
+        
+        .nav {
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(136, 133, 130);
+            border-bottom: 1px solid royalblue;
+        }
+        
+        .menu li {
+            position: relative;
+            width: 150px;
+            height: 50px;
+            background-color: thistle;
+            float: left;
+            list-style-type: none;
+            line-height: 50px;
+            text-indent: 20px;
+        }
+        
+        li a {
+            text-decoration: none;
+            font-weight: bolder;
+        }
+        
+        .menu li:hover {
+            background-color: turquoise;
+        }
+        
+        li:hover>a {
+            font-style: italic;
+        }
+        
+        .menu li .sub-menu {
+            position: absolute;
+            display: none;
+        }
+        
+        .menu li:hover .sub-menu {
+            display: block;
+        }
+        
+        .menu li .sub-menu li .sub-menu {
+            display: none;
+        }
+        
+        .menu li .sub-menu li:hover>.sub-menu {
+            display: block;
+            top: opx;
+            left: 150px;
+        }
+        /* .content {
+            height: 50px;
+            width: 1089px;
+            background-color: rgb(252, 249, 246);
+            border-bottom: 1px solid rgb(202, 83, 139);
+            float: left;
+        } */
+        /* .HELP li .floating-phone .uk-icon-phone {
+            display: none;
+            position: fixed;
+            left: 10px;
+            bottom: 10px;
+            height: 50px;
+            width: 50px;
+            background: #46C11E url(../item/calltome) center / 30px no-repeat;
+            z-index: 99;
+            color: #FFF;
+            font-size: 35px;
+            line-height: 55px;
+            text-align: center;
+            border-radius: 50%;
+            -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+            -moz-box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+            box-shadow: 0 2px 5px rgba(0, 0, 0, .5);
+        }
+        
+        @media (max-width: 650px) {
+            #floating-phone {
+                display: block;
+            }
+        } */
+    </style>
+</head>
+
+<body>
+    <div class="wrapper">
+        <div class="header">
+            <img src="../item/iuh.tc.png" alt="" srcset="" height="200p" width="1089">
+            <p class="p1">Khoa CNTT</p>
+            <p class="p2">Trung tam Tin Hoc</p>
+        </div>
+        <div class="nav">
+            <ul class="menu">
+
+                <li><a href="#">HOME</a></li>
+                <li><a href="#">SERVICES</a></li>
+                <li><a href="#">CONTACT</a>
+                    <ul class="sub-menu">
+                        <li><a href="#">MOBI</a></li>
+                        <li><a href="#">VINA</a></li>
+                        <li><a href="#">VIETTEL</a>
+                            <ul class="sub-menu">
+                                <li><a href="#">MOBI</a></li>
+                                <li><a href="#">VINA</a></li>
+                                <li><a href="#">VIETTEL</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </li>
+                <li><a href="#">ABOUT</a></li>
+                <li><a href="#">HELP</a>
+                    <!-- <li><a href="#">Tell to me!</a>
+                        <a href="tel:0344037974" title="Gọi 0344037974" onclick="_gaq.push(['_trackEvent', 'Contact', 'Call Now Button', 'Phone']);" id="floating-phone">
+                            <i class="uk-icon-phone"></i></a>
+                    </li> -->
+                </li>
+            </ul>
+            <!-- </div>
+        <div class="content">
+            <div class="aside">3</div>
+            <div class="section">4</div>
+        </div>
+        <div class="footer">5</div>
+    </div> -->
+</body>
+
+</html>
